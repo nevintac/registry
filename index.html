@@ -3,13 +3,6 @@
   <head>
     <meta charset = "GBK">
     <title>NIAC</title>
-    <style type = "text/css">
-      body{
-        background-image:url(https://imgse.com/i/pkb1QIO);
-        background-repeat:repeat;
-        background-attachment:fixed;
-        }
-      </style>
   </head>
   <body>
     <h1 align = "center">Registry to NIAC</h1>
@@ -22,21 +15,28 @@
         </i>
       </center>
     </p>
-    <form>
+    <form action = "">
       1.Player name:<br>
-      <input type = "text" name = "Player name">
+      <input type = "text" name = "Player name" maxlength = "100" required>
       <br>
       2.Server:<br>
-      <input type = "text" name = "Server">
+      <input type = "text" name = "Server" maxlength = "100" required>
       <br>
       3.Do you play Minecraft?
-      <input type = "radio" name = "MC" value = "yes" checked>Yes
-      <input type = "radio" name = "MC" value = "no">No
+      <input type = "radio" name = "MC" value = "yes" checked required>Yes
+      <input type = "radio" name = "MC" value = "no" required>No
       <br>
       4.I promise,I will comply with the rules and be aware of the consequences of violating the rules and be held accountable.
-      <input type = "radio" name = "Promise" value = "yes" checked>Yes
-      <input type = "radio" name = "Promise" value = "no">No
+      <input type = "radio" name = "Promise" value = "yes" checked required>Yes
+      <input type = "radio" name = "Promise" value = "no" required>No
+      <br>
+      5.Your email address:
+      <input type = "text" name = "email" maxlength = "20" autocomplete = "off" required>
+      <br>
+      <input type = "submit" formtarget = "_blank" value = "Submit">
+      <input type = "submit" formmethod = "post" formation = "post.asp" value = "Post_submit">
     </form>
+    <hr />
     <p>
       <center>
         <i font-family:time;color:red>
@@ -45,6 +45,6 @@
       </center>
     </p>
     <hr/>
-    <a href = "nevintac.github.io" target = "_blank" Back to main page>
+    <a href = "nevintac.github.io" target = "_blank" Back to main page></a>
   </body>
 </html>
